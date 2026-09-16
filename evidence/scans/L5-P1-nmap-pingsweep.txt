@@ -1,0 +1,7 @@
+# Nmap 7.99 scan initiated Sun Sep 13 01:26:28 2026 as: /usr/lib/nmap/nmap -sn -oN /home/ransome/CIP-A105_2026-EHIT-16917_CTF1_Iron-Raven/evidence/scans/L5-P1-nmap-pingsweep.txt 10.10.10.0/24
+Nmap scan report for 10.10.10.157
+Host is up (0.0012s latency).
+MAC Address: 52:54:00:12:34:56 (QEMU virtual NIC)
+Nmap scan report for 10.10.10.1
+Host is up.
+# Nmap done at Sun Sep 13 01:26:34 2026 -- 256 IP addresses (2 hosts up) scanned in 6.72 seconds

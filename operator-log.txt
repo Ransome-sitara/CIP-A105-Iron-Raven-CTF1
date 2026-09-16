@@ -1,0 +1,33 @@
+OPERATOR ACTIVITY LOG - OPERATION IRON RAVEN
+
+Student: Daniel Etim
+Registration: 2026/EHIT/16917
+Target: OPFOR-01 (Raven2)
+Start Date: 2026-09-12
+
+Date/Time | Phase | Action / Command Purpose | Key Observation / Result | Evidence Ref.
+----------|-------|--------------------------|--------------------------|--------------
+2026-09-12 18:45 | Phase 0 | Preserved original VMDK | Original hash verified | L5-P0-04
+2026-09-12 20:45 | Phase 0 | Preserved first-boot QCOW2 | firstboot image retained | L5-P0-01
+2026-09-12 21:30 | Phase 0 | Recreated pristine QCOW2 from VMDK | 100 percent conversion complete | L5-P0-02
+2026-09-12 21:32 | Phase 0 | Created CIP-A105-CTF1-CLEAN-BASELINE.qcow2 | Baseline verified, no errors | L5-P0-03
+2026-09-12 21:33 | Phase 0 | Verified image integrity | qemu-img check: no errors | L5-P0-02
+2026-09-12 21:38 | Phase 0 | Recorded SHA256 hashes | All four critical files hashed | L5-P0-04
+$(date '+%Y-%m-%d %H:%M') | Phase 1 | Booted Raven from pristine QCOW2 | Raven online on br-ctf | L5-P1-01
+$(date '+%Y-%m-%d %H:%M') | Phase 1 | Verified Raven reachability with ping | 3 packets received, 0% loss | L5-P1-02
+$(date '+%Y-%m-%d %H:%M') | Phase 1 | ARP scan for host discovery | Raven identified at 10.10.10.157 | L5-P1-03
+$(date '+%Y-%m-%d %H:%M') | Phase 1 | Nmap ping sweep on 10.10.10.0/24 | Raven confirmed as only live host | L5-P1-04
+2026-09-13 01:20 | Phase 1 | Verified attacker position on br-ctf | 10.10.10.1/24 confirmed | L5-P1-01
+2026-09-13 01:24 | Phase 1 | ARP scan on 10.10.10.0/24 | Raven found at 10.10.10.157, MAC 52:54:00:12:34:56 (QEMU) | L5-P1-03
+2026-09-13 01:26 | Phase 1 | Nmap ICMP ping sweep | 2 hosts up: 10.10.10.157 (Raven), 10.10.10.1 (Kali) | L5-P1-04
+2026-09-13 01:28 | Phase 1 | Reverse DNS lookup | NXDOMAIN, no PTR record | L5-P1-05
+2026-09-13 01:30 | Phase 1 | Ping confirmation to Raven | 5/5 replies, 0 percent loss, TTL 64 (Linux) | L5-P1-05
+2026-09-14 17:50 | Phase 6 | Directory listing revealed flag3.png in uploads | Artifact located | L5-P6-01
+2026-09-14 17:52 | Phase 6 | Downloaded flag3.png | 10K file preserved | L5-P6-02
+2026-09-16 [time] | Phase 7 | Verified no test artifacts written to target | All probe paths 404 | L5-P7-01
+2026-09-16 [time] | Phase 7 | Verified no test comments posted | Comment count 0 | L5-P7-02
+2026-09-16 [time] | Phase 7 | Stopped QEMU | Process terminated cleanly | L5-P7-03
+2026-09-16 [time] | Phase 7 | Restored clean baseline | Hash 06b6b9f0...660ac matches | L5-P7-04
+2026-09-16 [time] | Phase 7 | Preserved post-assessment image | Hash 0b5ebd9b...e1285 | L5-P7-05
+2026-09-16 [time] | Phase 7 | dnsmasq and br-ctf retained for future practice | - | -
+2026-09-16 [time] | Phase 7 | Environment restored to baseline | Assessment complete | L5-P7-06

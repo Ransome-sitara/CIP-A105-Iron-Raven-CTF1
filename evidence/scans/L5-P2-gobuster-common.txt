@@ -1,0 +1,12 @@
+css                 [36m (Status: 301)[0m [Size: 310][34m [--> http://10.10.10.157/css/][0m
+fonts               [36m (Status: 301)[0m [Size: 312][34m [--> http://10.10.10.157/fonts/][0m
+.htpasswd           [33m (Status: 403)[0m [Size: 296]
+.hta                [33m (Status: 403)[0m [Size: 291]
+img                 [36m (Status: 301)[0m [Size: 310][34m [--> http://10.10.10.157/img/][0m
+index.html          [32m (Status: 200)[0m [Size: 16819]
+.htaccess           [33m (Status: 403)[0m [Size: 296]
+js                  [36m (Status: 301)[0m [Size: 309][34m [--> http://10.10.10.157/js/][0m
+manual              [36m (Status: 301)[0m [Size: 313][34m [--> http://10.10.10.157/manual/][0m
+server-status       [33m (Status: 403)[0m [Size: 300]
+vendor              [36m (Status: 301)[0m [Size: 313][34m [--> http://10.10.10.157/vendor/][0m
+wordpress           [36m (Status: 301)[0m [Size: 316][34m [--> http://10.10.10.157/wordpress/][0m

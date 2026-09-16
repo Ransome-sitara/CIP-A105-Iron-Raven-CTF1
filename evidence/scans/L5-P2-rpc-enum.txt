@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Sun Sep 13 02:57:52 2026 as: /usr/lib/nmap/nmap -sV -p 42291 --script rpcinfo -oN /home/ransome/CIP-A105_2026-EHIT-16917_CTF1_Iron-Raven/evidence/scans/L5-P2-rpc-enum.txt 10.10.10.157
+Nmap scan report for 10.10.10.157
+Host is up (0.00067s latency).
+
+PORT      STATE SERVICE VERSION
+42291/tcp open  status  1 (RPC #100024)
+MAC Address: 52:54:00:12:34:56 (QEMU virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 13 02:58:04 2026 -- 1 IP address (1 host up) scanned in 12.00 seconds

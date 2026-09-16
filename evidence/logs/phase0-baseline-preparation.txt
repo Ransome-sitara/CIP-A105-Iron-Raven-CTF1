@@ -1,0 +1,33 @@
+=============================================================
+PHASE 0 - PREPARATION AND CONTROL
+=============================================================
+Student: Daniel Etim (2026/EHIT/16917)
+Date: 2026-09-12 21:51:23 WAT
+
+-------------------------------------------------------------
+STEP 1: QEMU STOP VERIFICATION
+-------------------------------------------------------------
+Command: ps aux | grep '[q]emu-system-x86_64'
+Result: No QEMU processes running
+
+-------------------------------------------------------------
+STEP 2: PRESERVE FIRST BOOT IMAGE
+-------------------------------------------------------------
+Command: mv Raven2-disk1.qcow2 Raven2-disk1-firstboot.qcow2
+Result: firstboot image preserved
+
+-------------------------------------------------------------
+STEP 3: RECREATE PRISTINE QCOW2
+-------------------------------------------------------------
+Command: qemu-img convert -p -f vmdk -O qcow2 Raven2-disk1.vmdk Raven2-disk1.qcow2
+Result: 100 percent conversion complete
+
+Command: qemu-img check Raven2-disk1.qcow2
+Result: No errors found on the image
+
+-------------------------------------------------------------
+STEP 4: CREATE CLEAN BASELINE
+-------------------------------------------------------------
+Command: cp Raven2-disk1.qcow2 CIP-A105-CTF1-CLEAN-BASELINE.qcow2
+Result: Clean baseline created and verified
+

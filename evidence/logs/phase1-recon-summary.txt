@@ -1,0 +1,35 @@
+PHASE 1 - RECONNAISSANCE SUMMARY
+
+Date: 2026-09-13
+Operator: Daniel Etim (2026/EHIT/16917)
+
+TARGET IDENTIFIED:
+- IP Address: 10.10.10.157
+- MAC Address: 52:54:00:12:34:56
+- MAC Vendor: QEMU virtual NIC
+- Hostname: No PTR record returned
+
+ATTACKER POSITION:
+- Interface: br-ctf
+- IP: 10.10.10.1/24
+- Route: 10.10.10.0/24 dev br-ctf
+
+DISCOVERY METHODOLOGY:
+1. Verified attacker interface and routing
+2. ARP scan (layer 2 discovery)
+3. Nmap ICMP ping sweep (layer 3 discovery)
+4. Reverse DNS lookup
+5. Ping confirmation
+                                                                                                                         							PING CONFIRMATION:
+- Command: ping -c 5 10.10.10.157
+- Packets: 5 transmitted, 5 received
+- Packet loss: 0 percent
+- TTL observed: 64 (indicates Linux or Unix-like OS)
+- Latency: 0.737 to 152.805 ms (avg 31.408 ms)
+HOSTS OBSERVED:
+- 10.10.10.157 (Raven, target)
+- 10.10.10.1 (Kali, attacker)
+                                                                                                                                                                                           
+ISOLATION VERIFIED: Yes. Only one non-gateway host responds on the segment.
+
+NEXT PHASE: Attack-Surface Enumeration

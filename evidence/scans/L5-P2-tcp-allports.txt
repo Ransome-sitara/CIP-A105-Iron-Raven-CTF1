@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Sun Sep 13 02:24:57 2026 as: /usr/lib/nmap/nmap -sS -T3 -p- --min-rate 1000 -oN /home/ransome/CIP-A105_2026-EHIT-16917_CTF1_Iron-Raven/evidence/scans/L5-P2-tcp-allports.txt 10.10.10.157
+Nmap scan report for 10.10.10.157
+Host is up (0.0029s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+42291/tcp open  unknown
+MAC Address: 52:54:00:12:34:56 (QEMU virtual NIC)
+
+# Nmap done at Sun Sep 13 02:25:04 2026 -- 1 IP address (1 host up) scanned in 6.71 seconds

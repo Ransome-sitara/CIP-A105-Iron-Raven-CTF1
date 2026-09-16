@@ -1,0 +1,17 @@
+=============================================================
+PHASE 0 - EVIDENCE HASHES
+Generated: 2026-09-12 21:52:05 WAT
+=============================================================
+
+--- Original VMDK ---
+dfcd389219fd787a6f6adc0391554e18d6b0ea8d3e23f8c6c9e44af7905fe5c6  appliance-inspect/Raven2-disk1.vmdk
+
+--- Preserved first-boot QCOW2 ---
+60979b6e546d92d3c496da64f6da065cbaee303cb84feb190a153450ed56c7e7  appliance-inspect/Raven2-disk1-firstboot.qcow2
+
+--- Pristine working QCOW2 ---
+06b6b9f0acec6d6f923ed2207ef925af1807d66fcd26cd1c7e4a6e59059660ac  appliance-inspect/Raven2-disk1.qcow2
+
+--- Clean baseline (required by ROE) ---
+06b6b9f0acec6d6f923ed2207ef925af1807d66fcd26cd1c7e4a6e59059660ac  appliance-inspect/CIP-A105-CTF1-CLEAN-BASELINE.qcow2
+
